@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(44, 44, 95);
+            color: white;
+            font-size: 20px;
+        }
+
+        div a {
+            color: red;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos de DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg" ><a href="#">Clique em mim</a></div>
+    <br>
+    <p>Veja no código como esses elementos abaixo foram criados: </p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] // Retorna uma lista de elementos por tag
+        window.document.write('Está escrito assim: ', p1.innerText, '<br/>')
+        window.document.write(window.navigator.appName,'<br/>')
+        window.document.write(window.document.URL, '<br/>')
+
+        var d = window.document.getElementById('msg') // Seleciona um elemento pelo seu id
+        d.style.background = 'white'   
+    </script>
+</body>
+</html>
