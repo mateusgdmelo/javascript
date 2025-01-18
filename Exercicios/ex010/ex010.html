@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: grey;
+            text-align: center;
+        }
+        p#inline {
+            display: inline-block;
+        }
+        input.verificar {
+            padding: 8px;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Velocidade do carro: </p>
+    <input type="number" name="vel" id="vel" class="verificar">
+    <p id="inline">Km/h</p>
+    <input type="button" value=" Verificar " class="verificar" onclick="velocidade()">
+    <div id="res">
+
+    </div>
+    <script>
+    function velocidade() {
+        var vel = document.querySelector('input#vel')
+        vel = Number(vel.value)
+        const lim = 60
+        var res = document.querySelector('div#res')
+
+        res.innerHTML = `<p>Sua velocidade atual é de ${vel}Km/h</p>`
+        if (vel > lim) {
+            res.innerHTML = res.innerHTML + `<p>Você ultrapassou o limite de velocidade de ${lim}Km/h. Você foi <strong>multado!</strong></p>` //Ou += para concatenar as strings
+        } else {
+            res.innerHTML = res.innerHTML + `<p>Você está dentro do limite de velocidade de ${lim}Km/h, pode seguir viagem tranquilamente!`
+        }
+        res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+    }
+    </script>
+</body>
+</html>
