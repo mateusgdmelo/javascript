@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de origem</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>País de Origem</h1>
+    <p>De que país você é? </p>
+    <div>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value=" Verificar " onclick="origem()">
+    </div>
+    <div id="res">
+
+    </div>
+    <script>
+        function origem () {
+            var nPais = document.querySelector('input#pais').value
+            var resposta = document.querySelector('div#res')
+
+            if (nPais.toUpperCase() == "BRASIL") {
+                resposta.innerHTML = `<p>Legal! Você é do Brasil, então você não é estrangeiro, você é brasileiro.</p>`
+            } else {
+                resposta.innerHTML = `<p>Você não é brasileiro, você é estrangeiro. Seja bem-vindo!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
