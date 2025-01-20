@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="inicio()" id="fundo">
+    <h1>
+        Verificador de idade
+    </h1>
+    <main>
+        <form action="cadastro.php" method="get" onsubmit="verificar(event)">
+            <div class="menu">
+                <!-- Vai ler o ano de nascimento -->
+                <label for="Inas">
+                    <p>Ano de nascimeto: </p>
+                </label>
+                <input type="number" name="nas" id="Inas" placeholder="Ex.: 1990" required>
+            </div>
+            <div class="menu">
+                <p>Sexo:</p> <!-- Vai ler o sexo -->
+
+                <input type="radio" name="sexo" id="Imas" value="masculino" class="varSexo" required>
+                <label for="Imas">
+                    <p>Masculino</p>
+                </label>
+
+                <input type="radio" name="sexo" id="Ifem" value="feminino" class="varSexo" required>
+                <label for="Ifem">
+                    <p>Feminino</p>
+                </label>
+            </div>
+            <div class="menu">
+                <button type="submit">Verificar</button>
+            </div>
+        </form>
+        <div id="apresentação">
+            
+            <p id="frase"></p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <em>Rodapé</em>
+        </p>
+    </footer>
+    <script src="ax015.js">
+        // Aqui vai meu código JS
+    </script>
+</body>
+</html>
