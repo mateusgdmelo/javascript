@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1572a8;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.479);
+}
+
+main {
+    background-color: white;
+    color: black;
+    width: 550px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.658);
+}
+
+input, button {
+    border-radius: 5px;
+    height: 25px;
+}
+
+label {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+
