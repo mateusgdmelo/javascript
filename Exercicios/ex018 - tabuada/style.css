@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: giz;
+    src: url(fonte/GIZMOS__.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url(imagens/quadro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body h1 {
+    color: white;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;   
+    width: 400px;
+    border-radius: 10px;  
+    padding: 15px;
+}
+
+input, button {
+    margin: 15px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+div#tabuada {
+    text-align: center;
+    padding: 5px;
+    font-family: giz;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #343C3F;
+}
+
+footer {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
