@@ -22,9 +22,9 @@ console.log(frutas)
 
 frutas.sort() // ordena os valores como strings, resultando em uma ordem lexicográfica inadequada para números.
 console.log(frutas)
-let n = [8, 5, 4, 1, 6, 2, 9]
+let n = [8, 5, 4, 10, 6, 2, 9]
 console.log(n)
-n.sort() // sort() ordena os valores como strings, resultando em uma ordem lexicográfica inadequada para números.
+n.sort((a, b) => a - b) // Com função de comparação: sort((a, b) => a - b) realiza uma comparação numérica e garante a ordenação correta.
 console.log(n)
 
 let contem = n.indexOf(8) // procura pelo valor especificado (no caso, 8) e retorna o índice dele, o seu "endereço".
