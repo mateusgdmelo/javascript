@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 - Inserir JS</title>
+    <!-- O script do head é carregado primeiro que corpo do HTML, isso pode atrapalhar algumas modificações que o JS estava fazendo no arquivo. -->
+    <script src="script-no-head.js"></script>
+</head>
+<body>
+    <script>
+        console.log("Script no body!")
+    </script>
+
+    <!-- O script no final do body é uma estratégia mais interessante pois ele permite que todas as informações do html sejam carregadas antes de executar o arquivo JS. Então se houver alguma mudança na página atrvés do JS, a solução será mais eficiente. -->
+    <script src="script-no-body.js"></script>
+</body>
+</html>
