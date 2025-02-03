@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Binary Search</h1>
+        </header>
+        <main>
+            <form action="cadastro.php" method="get" onsubmit="pesquisaBinaria(event)">
+                <p>Escolha um intervalo de <em>n</em> números:</p>
+                <p>
+                    <label for="interval">De: <input type="number" name="interval" id="inicio" placeholder="0"> a: </label> <input type="number" name="interval" id="fim" placeholder="...1000 ">
+                </p>
+                <p>Escolha um número qualquer do intervalo espcificado:</p>
+                <p>
+                    <label for="num">Número:</label> <input type="number" name="num" id="num" placeholder="Ex.: 15">
+                </p>
+                <p>
+                    <button type="submit">Iniciar Pesquisa Binária</button>
+                </p>
+            </form>
+
+            <section id="res">
+            </section>
+        </main>
+        <footer>
+            <em>&#xA9 MGdM</em>
+        </footer>
+    </div>
+    <script src="js/binary-search.js"></script>
+</body>
+</html>

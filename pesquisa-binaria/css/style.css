@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/photo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.514);
+    margin: 15px;
+}
+
+main p {
+    font-size: 18px
+}
+
+input {
+    width: 70px;
+}
+
+section#res {
+    height: 100px;
+    border: 1px dashed black;
+}
+
+footer {
+    margin-top: 15px;
+}
