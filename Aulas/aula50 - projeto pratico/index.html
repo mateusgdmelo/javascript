@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Salve a sua próxima tarefa:</h2>
+    </header>
+    <main>
+        <form action="" id="add-form">
+            <input type="text" name="caixa-selecao" id="caixa-selecao" placeholder="O que você vai fazer?">
+            <button type="submit" id="btn-terefa"> 
+                <ion-icon name="add-outline"></ion-icon>
+            </button>
+        </form>
+    </main>
+    <section>
+        <h2>Estas são as suas tarefas:</h2>
+        <ul id="tarefas">
+            <li class="template hide">
+                <p class="titulo-tarefa">Teste 1</p>
+                <div class="icones">
+                    <ion-icon name="checkmark-outline" class="done-btn"></ion-icon>
+                    <ion-icon name="close-outline" class="remove-btn"></ion-icon>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="js/projeto.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
