@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(../imagens/photo.jpg);
     background-size: cover;
@@ -12,32 +18,44 @@ body {
 }
 
 div#container {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
 }
 
 header h1 {
     font-size: 3em;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.514);
-    margin: 15px;
+    margin: 10px;
 }
 
 main p {
-    font-size: 18px
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 input {
     width: 70px;
+    outline: none;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px;
 }
 
 section#res {
-    height: 100px;
-    border: 1px dashed black;
+    padding: 5px;
+    text-align: center;
+    line-height: 25px;
+    display: flex;
+    font-family: cursive;
 }
 
 footer {
