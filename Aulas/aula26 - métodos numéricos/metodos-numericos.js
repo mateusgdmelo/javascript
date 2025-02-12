@@ -25,3 +25,14 @@ console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
 
 console.log(2.7976931348623157e+308);
+
+let teste = document.querySelector('#teste');
+
+let x = 50;
+
+teste.innerHTML = x.toString() + //retorna um número como uma string
+"<br>" + x.toExponential() + //retorna uma string, com um número arredondado e escrito usando notação exponencial
+"<br>" + x.toExponential(2) + //Um parâmetro opcional define o número de caracteres depois do ponto decimal
+"<br>" + x.toFixed(3) + //retorna uma string, com o número escrito com um número especificado de decimais
+"<br>" + x.toPrecision(6) + //retorna uma string, com um número escrito com um comprimento especificado
+"<br>" + x.valueOf() //retorna um número como um número
