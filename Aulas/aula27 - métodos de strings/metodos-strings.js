@@ -22,6 +22,26 @@ teste.innerHTML = meuNome +
 "<br>" + meuNome.repeat(3) + //retorna uma string com um número de cópias de uma string
 "<br>" + meuNome.replace("Gomes", "Souza") + //substitui um valor especificado por outro valor em uma string, esse método substitui apenas a primeira correspondência
 "<br>" + meuNome.replaceAll("e", "x") + //Já sse método substitui todas as correspondências 
-"<br>" + meuNome.indexOf("Gomes") //retorna o índice da primeira ocorrência do parâmetro passado; 
 
+// Métodos de pesquisa de strings
+"<br>" + meuNome.indexOf("e") +//retorna o índice (posição) da primeira ocorrência de uma string em uma string, retorna -1 se a string não for encontrada
+"<br>" + meuNome.indexOf("e", 12) + //Ambos os métodos aceitam um segundo parâmetro como posição inicial para a pesquisa
+"<br>" + meuNome.lastIndexOf("e") +//retorna o índice da última ocorrência de um texto especificado em uma string, retorna -1 se a string não for encontrada
+"<br>" + meuNome.lastIndexOf("e", 10) + //Ambos os métodos aceitam um segundo parâmetro como posição inicial para a pesquisa
+"<br>" + meuNome.search("de") + //método pesquisa uma string (ou uma expressão regular) e retorna a posição da correspondência (obs.: não aceita um segundo argumento de posição inicial)
+"<br>" + meuNome.match("me") +//retorna uma matriz contendo os resultados da correspondência de uma string com uma string (ou uma expressão regular)
+"<br>" + meuNome.match(/me/) + // com uma expressão regular
+"<br>" + meuNome.toLowerCase().match(/me/g) +//Realiza uma busca global por "me"
+"<br>" + meuNome.match(/me/gi) +//Execute uma busca global, sem distinção entre maiúsculas e minúsculas, por "me"
+"<br>" + meuNome.matchAll("me") +//método retorna um iterador contendo os resultados da correspondência de uma string com uma string (ou uma expressão regular), também funcina com os mesmos parâmetros de expressões regulares que match()
+"<br>" + meuNome.includes("Mateus") +//Retorna verdadeiro se uma string contiver um valor especificado. Caso contrário, ele retorna false
+"<br>" + meuNome.includes("Mateus", 12) + //Comece na posição 12
+"<br>" + meuNome.includes("Paulo") +
+"<br>" + meuNome.startsWith("Mateus") +//retorna true se uma string começa com um valor especificado, caso contrário, ele retorna false
+"<br>" + meuNome.startsWith("Gomes", 7) +//Uma posição inicial para a pesquisa pode ser especificada
+"<br>" + meuNome.startsWith("Gomes") +
+"<br>" + meuNome.endsWith("Melo") +//retorna true se uma string termina com um valor especificado, caso contrário retorna false
+"<br>" + meuNome.endsWith("Gomes", 12) +//Verifique se os 12 primeiros caracteres de uma string terminam com "world"
+"<br>" + meuNome.endsWith("Gomes") +
+ 
 console.log(teste);
